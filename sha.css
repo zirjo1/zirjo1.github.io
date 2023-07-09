@@ -1,0 +1,21 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+p {
+	color: #e4b100;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: justify;
+    -webkit-background-size: text;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url(coldplayparachutes.jpg) no-repeat center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}

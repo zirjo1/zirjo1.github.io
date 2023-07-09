@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>Your Love Letter</title>
+    <style>
+@keyframes fadeIn {
+
+
+	  from {
+                opacity: 0;
+				transition: opacity 1s ease-in-out;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        
+        body {
+		   animation: fadeIn 1s ease-in-out;
+            font-family: Arial, sans-serif;
+            background-color:black;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #222021;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #e4b100;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #e4b100;
+        }
+        
+        .content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+            margin-bottom: 20px;
+        }
+        
+        .content.reveal {
+            opacity: 1;
+            max-height: 1000px;
+        }
+        
+        .content p {
+            color: #e4b100;
+            margin-bottom: 10px;
+        }
+        
+        .signature {
+            text-align: right;
+            color: #e91e63;
+            font-weight: bold;
+        }
+        
+        .signature p {
+            margin-bottom: 0;
+        }
+        
+        .reveal-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .reveal-button button {
+            background-color: #e4b100;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .close-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .close-button button {
+            background-color: #e4b100;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function revealContent() {
+            var content = document.getElementById("hidden-content");
+            var revealButton = document.getElementById("reveal-button");
+            var closeButton = document.getElementById("close-button");
+            content.classList.add("reveal");
+            revealButton.style.display = "none";
+            closeButton.style.display = "block";
+        }
+
+        function hideContent() {
+            var content = document.getElementById("hidden-content");
+            var revealButton = document.getElementById("reveal-button");
+            var closeButton = document.getElementById("close-button");
+            content.classList.remove("reveal");
+            revealButton.style.display = "block";
+            closeButton.style.display = "none";
+        }
+    </script>
+</head>
+<body style="background: linear-gradient(black, #e4b100">
+    <div class="container">
+        <div class="header">
+            <h1>My Dearest Shasha,</h1>
+            <p>for you.</p>
+        </div>
+        <div id="hidden-content" class="content">
+		  <section>
+     <ul>
+	 <li><a href="index.html">Back to Home</a></li>
+	 </ul>
+     </section>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6ZG5lRT77aJ3btmArcykra?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+        
+            
+            <p>
+Initially, I never thought I would fall in love or even be interested in love itself. However, you shattered the part of me that had no intentions of pursuing love. 
+I used to consider you as a cool friend to hang out with, especially since you were in a recent relationship. 
+I didn't want to disrupt your peace, but somehow, we grew closer because I didn't have many people to spend time with. Gradually, I realized that my feelings for you were more than just admiration; I genuinely liked you as a person. 
+It took me a while to acknowledge my own emotions, as I was afraid of the potential consequences. 
+I was scared of what it might break and was hesitant about everything, a fear that still lingers. 
+Despite my apprehensions, I decided to take a chance on my feelings for you, As my affection for you continued to grow, I allowed it to unfold naturally.
+I wasn't naturally inclined towards affection, and I struggled with knowing how to act. You managed to break through the defensive walls I had built, and that means a lot to me. I'm willing to go beyond expectations for you, even though it may be challenging and confusing for both of us. Love can be perplexing at times, alternating between annoying and comforting. All I want is to give it my all because losing you would be devastating. My lack of vocal expression stems from not knowing how to navigate this situation, but I'm eager to learn more about you and share new experiences together.</p>
+        </div>
+        <div id="reveal-button" class="reveal-button">
+            <button onclick="revealContent()">Reveal</button>
+        </div>
+        <div id="close-button" class="close-button" style="display: none;">
+            <button onclick="hideContent()">Close</button>
+        </div>
+    </div>
+</body>
+</html>
